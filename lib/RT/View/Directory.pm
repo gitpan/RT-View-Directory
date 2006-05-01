@@ -1,6 +1,6 @@
 
-package RT::View::Tree;
+package RT::View::Directory;
 
-our $VERSION = '1.5';
+our $VERSION = '1.6';
 
 1;
