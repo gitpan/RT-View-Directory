@@ -7,7 +7,7 @@ $OrderBy => undef
 my $tix = RT::Tickets->new($session{'CurrentUser'});
 $tix->FromSQL($Query);
 $tix->OrderBy( FIELD => $OrderBy, ORDER => $Order);
-my @tickets = @{$tix->ItemsArrayRef};
+my @tickets = @{$tix->ItemsArrayRef ||[]};
 my $title = loc("Show attachments");
 my $query_args = join(';',"Query=$Query","OrderBy=$OrderBy", "Order=$Order");
 </%init>

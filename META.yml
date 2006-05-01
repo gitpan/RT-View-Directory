@@ -1,11 +1,12 @@
-name: RT-View-Directory
-version: 1.4
 abstract: RT View-Directory Extension
 author: Jesse Vincent <jesse@bestpractical.com>
-license: GPL version 2
 distribution_type: module
-no_index:
-  directory:
+generated_by: Module::Install version 0.61
+license: GPL version 2
+name: RT-View-Directory
+no_index: 
+  directory: 
     - html
     - inc
-generated_by: Module::Install version 0.41
+    - t
+version: 1.5
