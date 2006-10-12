@@ -6,7 +6,16 @@ $OrderBy => undef
 <%init>
 my $tix = RT::Tickets->new($session{'CurrentUser'});
 $tix->FromSQL($Query);
-$tix->OrderBy( FIELD => $OrderBy, ORDER => $Order);
+if ($OrderBy =~ /\|/) {
+    # Multiple Sorts
+    my @OrderBy = split /\|/,$OrderBy;
+    my @Order = split /\|/,$Order;
+    $tix->OrderByCols(
+        map { { FIELD => $OrderBy[$_], ORDER => $Order[$_] } } ( 0 .. $#OrderBy ) );;
+} else {
+    $tix->OrderBy(FIELD => $OrderBy, ORDER => $Order);
+}
+
 my @tickets = @{$tix->ItemsArrayRef ||[]};
 my $title = loc("Show attachments");
 my $query_args = join(';',"Query=$Query","OrderBy=$OrderBy", "Order=$Order");

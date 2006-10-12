@@ -1,12 +1,12 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.41.
+signed via the Module::Signature module, version 0.54.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
 
     % cpansign -v
 
-It would check each file's integrity, as well as the signature's
+It will check each file's integrity, as well as the signature's
 validity.  If "==> Signature verified OK! <==" is not displayed,
 the distribution may already have been compromised, and you should
 not run its Makefile.PL or Build.PL.
@@ -14,11 +14,11 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d6eb7b477ee433024832b09b59a59e1488bc10ff Changes
+SHA1 449748a9042e280738dc6cb5b449e7654095a035 Changes
 SHA1 e84dcf95ec30526336e88ee217ea6b6f34430c4f MANIFEST
 SHA1 30836b582eef7a5592c64d0fd628ccef392dd02a MANIFEST.SKIP
-SHA1 13d2a1d54fd4141d0475399ef8f1575d7c35375c META.yml
-SHA1 9f0da47ff925264d4ca47933bcd8cfd6308bc4c4 Makefile
+SHA1 f07ba2801bab410b1146aca33655ff08acdc2827 META.yml
+SHA1 30f081bd6812a7a8b607350f3e1374ef7a5222b4 Makefile
 SHA1 750e53dd5fc81b1e29081de6eb3474536c962d95 Makefile.PL
 SHA1 f5a491559004752cfc183a4d80ca137dc1b67ded README
 SHA1 1b3f27831ca70cc978cdc0ebeca53de62da45d12 html/Callbacks/RT-View-Directory/Search/Results.html/SearchActions
@@ -28,21 +28,21 @@ SHA1 da39a3ee5e6b4b0d3255bfef95601890afd80709 html/View-Directory/Search/Ticket/
 SHA1 cb6a8fa7266fc4cc3ac7f11e697ad5e617cc0304 html/View-Directory/Search/dhandler
 SHA1 c995184b40cc4cfbb48c13d4c0e8192b21ac6385 html/View-Directory/Ticket/File
 SHA1 276ddd30ebdad5479a84021c1d28fc2c244b603c html/View-Directory/Ticket/dhandler
-SHA1 df5d01a6ffe1a2217c867e9d1128e5cc4c1609c4 html/View-Directory/dhandler
-SHA1 e7688055bf405375921ea837273d8bdc68803efb inc/Module/Install.pm
-SHA1 e5b3215acb96829f2142dcfce736c1b6484fbc08 inc/Module/Install/Base.pm
-SHA1 07c44e137098675ea35a5d537df1e4af098382d9 inc/Module/Install/Can.pm
-SHA1 8f691f8e451ba687551fa836e8d75c4d514241e5 inc/Module/Install/Fetch.pm
-SHA1 81b798c6ca71d1b665a470fb49d32105084ac389 inc/Module/Install/Makefile.pm
-SHA1 c8c9737da19baa15ffa7d9d5037913f64b592189 inc/Module/Install/Metadata.pm
-SHA1 689e185a808caf420a54996b55708034d2fa08c2 inc/Module/Install/RTx.pm
-SHA1 b97304e2a5c405d950eeaa4afd09c6b5507571c3 inc/Module/Install/Win32.pm
-SHA1 73a588d58f7ad0a6a9ed0ea80c48fa12f234a02c inc/Module/Install/WriteAll.pm
-SHA1 e7852927be6834a88e3befa8b88ec35800dbd67e lib/RT/View/Directory.pm
+SHA1 6baede1da6eec3f4734c88061ddfdf6a2c0ddb87 html/View-Directory/dhandler
+SHA1 9b2f9d83bcf77860f53a0c07c90a4a59ad9f5df1 inc/Module/Install.pm
+SHA1 abe32855d75ab13747cf65765af9947b7a8c3057 inc/Module/Install/Base.pm
+SHA1 95b81d1e91bd634467bf633571eff4420e9c04eb inc/Module/Install/Can.pm
+SHA1 1fe98c63cf9d7271c8cb4183ba230f152df69e26 inc/Module/Install/Fetch.pm
+SHA1 2249171a2b72cd73ff2c0a06597d29f86e5df456 inc/Module/Install/Makefile.pm
+SHA1 381bb98ea3877bba49ae85e7a7ea130645fd3dbf inc/Module/Install/Metadata.pm
+SHA1 f7ca5510f60edc6a3ca479b8cbd23d89e9d15974 inc/Module/Install/RTx.pm
+SHA1 0c2118868ef82ac517eb6d9c3bd93e6eb9bbf83e inc/Module/Install/Win32.pm
+SHA1 e827d6d43771032fa3df35c0ad5e5698d0e54cda inc/Module/Install/WriteAll.pm
+SHA1 0daaf2212c087053983270733a3ebf011c3d22ea lib/RT/View/Directory.pm
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.2.2 (GNU/Linux)
+Version: GnuPG v1.4.3 (Darwin)
 
-iD8DBQFEVm6EEi9d9xCOQEYRAkb9AKCeJ5MwGtldVHXyK3yMj3qJVkThyQCfb3Tg
-1KH9yo+y/ITEtEqn9kNLIXk=
-=iWCG
+iD8DBQFFLmvwEi9d9xCOQEYRAhcSAJ9pBPsikNBRhYvOikBHpcQIgMCIkwCeMAbU
+NTgBQuZIi3JcoChPllDt8tA=
+=B5Yg
 -----END PGP SIGNATURE-----
